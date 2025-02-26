@@ -1,0 +1,25 @@
+/* Сброс отступов и установка высоты для html и body */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Высота html и body равна 100% окна браузера */
+}
+
+/* Основной контейнер */
+body {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+}
+
+main {
+    min-height: auto;
+    height: 100%;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

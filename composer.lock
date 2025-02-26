@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "006c4ddfd87627edd18542c501fd181e",
+    "content-hash": "21fea8ce71bbd41c211a57e6f516061c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1184,6 +1184,61 @@
                 }
             ],
             "time": "2025-02-03T10:55:03+00:00"
+        },
+        {
+            "name": "itstructure/laravel-grid-view",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itstructure/laravel-grid-view.git",
+                "reference": "f350770c5e51bba78680d695b9fdb986e458f475"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itstructure/laravel-grid-view/zipball/f350770c5e51bba78680d695b9fdb986e458f475",
+                "reference": "f350770c5e51bba78680d695b9fdb986e458f475",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Itstructure\\GridView\\GridViewServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Itstructure\\GridView\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Girnik",
+                    "email": "girnikandrey@gmail.com"
+                }
+            ],
+            "description": "Grid view for laravel framework",
+            "keywords": [
+                "grid",
+                "gridview",
+                "laravel",
+                "table",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/itstructure/laravel-grid-view/issues",
+                "source": "https://github.com/itstructure/laravel-grid-view/tree/1.1.6"
+            },
+            "time": "2025-02-26T04:09:26+00:00"
         },
         {
             "name": "laravel/framework",
