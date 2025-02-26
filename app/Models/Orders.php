@@ -9,9 +9,14 @@ class Orders extends Model
 {
     use HasFactory;
     protected $table = 'orders';
-    public function goods()
-    {
-        return $this->hasMany(Goods::class);
+
+
+    public function getGoods() {
+        return Goods::find($this->goods_id);
+    }
+
+    public function sum() {
+        return $this->amount * $this->getGoods()->price;
     }
     
 }

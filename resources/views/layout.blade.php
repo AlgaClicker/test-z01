@@ -26,8 +26,8 @@
                             Заказы
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Создать заказ</a></li>  
-                        <li><a class="dropdown-item" href="#">Список заказов</a></li>
+                        <li><a class="dropdown-item" href="{{URL::to('/order/new')}}">Создать заказ</a></li>  
+                        <li><a class="dropdown-item" href="{{URL::to('/goods')}}">Список заказов</a></li>
                         </ul>
                         </li>
                         <li class="nav-item dropdown">

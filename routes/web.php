@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use  App\Http\Controllers\CategoriesController;
 use  App\Http\Controllers\GoodsController;
+use  App\Http\Controllers\OrdesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,3 +33,11 @@ Route::get('/goods/{id}/show', [GoodsController::class, 'showCard']);
 Route::get('/goods/{id}/edit', [GoodsController::class, 'editCard']);
 Route::post('/goods/{id}/edit', [GoodsController::class, 'editWrite']);
 Route::get('/goods/{id}/delete', [GoodsController::class, 'deleteGoods']);
+
+
+
+Route::get('/orders', [OrdesController::class, 'index']);
+Route::get('/order/new', [OrdesController::class, 'createCard']);
+Route::post('/order/new', [OrdesController::class, 'createWrite']);
+Route::get('/order/{id}/show', [OrdesController::class, 'showCard']);
+Route::get('/order/{id}/edit', [OrdesController::class, 'editCard']);

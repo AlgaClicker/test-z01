@@ -1,6 +1,4 @@
-@php
-use App\Models\GoodsCategories;
-@endphp
+
 
 @extends('layout')
 
@@ -23,7 +21,7 @@ use App\Models\GoodsCategories;
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon4">Категория</span>
-                <span class="form-control"  aria-describedby="basic-addon4">{{GoodsCategories::find($goods->goods_category_id)->name;}}</span>
+                <span class="form-control"  aria-describedby="basic-addon4">{{$goods->categoryName();}}</span>
             </div>
 
 

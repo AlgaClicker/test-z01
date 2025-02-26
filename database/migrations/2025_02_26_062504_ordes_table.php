@@ -17,10 +17,13 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->float('price');
-            $table->text('description');
+            $table->decimal('amount', total: 8, places: 2);
+            $table->string('status');
+            $table->timestamp('order_at');
+            $table->text('description')->nullable(true);
             $table->timestamps();
-            
+            $table->foreignId('goods_id')->constrained('goods')->onDelete('cascade');
+                    
             
         });
 
