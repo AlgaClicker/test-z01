@@ -9,8 +9,7 @@ class Goods extends Model
 {
     use HasFactory;
     protected $table = 'goods';
-    public function goods()
-    {
-        return $this->hasMany(Goods::class);
-    }
+
+
+
 }

@@ -28,5 +28,7 @@ Route::post('/categories/new', [CategoriesController::class, 'createWrite']);
 Route::get('/goods', [GoodsController::class, 'index']);
 Route::get('/goods/new', [GoodsController::class, 'createCard']);
 Route::post('/goods/new', [GoodsController::class, 'createWrite']);
+Route::get('/goods/{id}/show', [GoodsController::class, 'showCard']);
 Route::get('/goods/{id}/edit', [GoodsController::class, 'editCard']);
 Route::post('/goods/{id}/edit', [GoodsController::class, 'editWrite']);
+Route::get('/goods/{id}/delete', [GoodsController::class, 'deleteGoods']);
