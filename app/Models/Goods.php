@@ -10,6 +10,12 @@ class Goods extends Model
     use HasFactory;
     protected $table = 'goods';
 
+    function categoryName()  
+    {
+        return GoodsCategories::find($this->goods_category_id)->name;
+    }
+    
+
 
 
 }

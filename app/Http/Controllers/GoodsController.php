@@ -36,7 +36,7 @@ class GoodsController extends Controller
         $goods = new Goods();
         $goods->name = $request->name;
         $goods->price = $request->price;
-        $goods->description = $request->description;
+        $request->description ?  $goods->description = $request->description : "";
         $goods->goods_category_id = $request->category_id;
         $goods->save();
 
@@ -69,7 +69,7 @@ class GoodsController extends Controller
         $goods = Goods::find($id);
         $goods->name = $request->name;
         $goods->price = $request->price;
-        $goods->description = $request->description;
+        $request->description ?  $goods->description = $request->description : "";
         $goods->goods_category_id = $request->category_id;
         $goods->save();
         return redirect('/goods');
