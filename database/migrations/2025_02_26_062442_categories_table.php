@@ -22,7 +22,7 @@ return new class extends Migration
         $list_categories = [
             ['id'=>1,"name"=>"Легкий","created_at"=>now()],
             ['id'=>2,"name"=>"Хрупкий","created_at"=>now()],
-            ['id'=>3,"name"=>"Тяжелвй","created_at"=>now()],
+            ['id'=>3,"name"=>"Тяжелый","created_at"=>now()],
         ];
         DB::table('goods_categories')->insert($list_categories);
     }
