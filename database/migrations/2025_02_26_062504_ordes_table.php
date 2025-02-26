@@ -20,8 +20,8 @@ return new class extends Migration
             $table->float('price');
             $table->text('description');
             $table->timestamps();
-            $table->integer('goods_id');
-            $table->foreign('goods_id')->references('id') ->on('goods')->onDelete('cascade'); 
+            
+            
         });
 
     }

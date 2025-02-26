@@ -20,8 +20,7 @@ return new class extends Migration
             $table->float('price');
             $table->text('description');
             $table->timestamps();
-            $table->integer('goods_categories_id');
-            $table->foreign('goods_categories_id')->references('id') ->on('categories')->onDelete('cascade'); 
+            $table->foreignId('goods_category_id')->constrained('goods_categories')->onDelete('cascade');
         });
     }
 

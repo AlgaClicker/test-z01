@@ -1,3 +1,12 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
 /* Сброс отступов и установка высоты для html и body */
 html, body {
     margin: 0;
@@ -12,8 +21,9 @@ body {
 }
 
 main {
-    min-height: auto;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
