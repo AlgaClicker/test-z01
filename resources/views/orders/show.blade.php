@@ -6,13 +6,24 @@ use Carbon\Carbon;
 
 @section('content')
     <div class="card" >
+        <div class="card-header hstack gap-3" >
+            <h5 class=" me-auto">Заказ для '{{$order->name}}' от {{Carbon::parse($order->order_at)->format('d.m.Y')}}</h5>
+            <div class="p-2">
+                <a href="{{URL::to('/order/'.$order->id.'/success')}}" class="btn btn-success">Выполнен</a>
+            </div>
+        </div>
         <div class="card-body">
-            <h5 class="card-title">Заказ для '{{$order->name}}' от {{Carbon::parse($order->order_at)->format('d.m.Y')}}</h5>
+            
             
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">ФИО Покупателя</span>
                 <span class="form-control"  aria-describedby="basic-addon1">{{$order->name}}</span>
             </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon_st">Статус</span>
+                <span class="form-control"  aria-describedby="basic-addon_st">{{$order->status}}</span>
+            </div>
+            
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon2">Дата заказа</span>
                 <span class="form-control"  aria-describedby="basic-addon2">{{Carbon::parse($order->order_at)->format('d.m.Y')}}</span>

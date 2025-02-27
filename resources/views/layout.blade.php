@@ -27,7 +27,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="{{URL::to('/order/new')}}">Создать заказ</a></li>  
-                        <li><a class="dropdown-item" href="{{URL::to('/goods')}}">Список заказов</a></li>
+                        <li><a class="dropdown-item" href="{{URL::to('/orders')}}">Список заказов</a></li>
                         </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -45,10 +45,12 @@
                         </li>
 
                     </ul>
+                    <!--
                     <form class="d-flex">
                         
                         <button class="btn btn-outline-success" type="submit">Корзина</button>
                     </form>
+                    -->
                     </div>
                 </div>
             </nav>

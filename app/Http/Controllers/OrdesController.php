@@ -62,5 +62,13 @@ class OrdesController extends Controller
         
     }
 
-    //showCard
+    public function successOrder($id) {
+
+        $order = Orders::find($id);
+        $order->status = "Выполнен";
+        $order->save();
+        
+        return redirect('/order/'.$id.'/show');
+    }
+    
 }

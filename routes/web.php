@@ -41,3 +41,5 @@ Route::get('/order/new', [OrdesController::class, 'createCard']);
 Route::post('/order/new', [OrdesController::class, 'createWrite']);
 Route::get('/order/{id}/show', [OrdesController::class, 'showCard']);
 Route::get('/order/{id}/edit', [OrdesController::class, 'editCard']);
+Route::get('/order/{id}/success', [OrdesController::class, 'successOrder']);
+
